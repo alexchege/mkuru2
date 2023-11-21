@@ -13,8 +13,8 @@ def create_app(*args, **kwargs):
     # Load environment variables from the .env file
     load_dotenv()
 
-    # Configure SQLAlchemy
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://chege:kanjurihigh@254@chege.mariadb.database.azure.com:3306/STUDENT_MANAGEMENT'
+   # Configure SQLAlchemy for PostgreSQL
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://ertjjuizhc:T13M6AT1R2HWHB42$@studentmanaging-server.postgres.database.azure.com:5432/studentmanaging-database'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
     # Initialize SQLAlchemy after initializing app
